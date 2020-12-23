@@ -24,7 +24,7 @@ namespace SerilogImplementation.Controllers
         {
             _logger.LogError(errorMessage);
 
-            //We are showing the message to our user. Which is a bad practice. We could leack system info. This could lead to hacking.\
+            //We are showing the message to our user. Which is a bad practice. We could leak system info. This could lead to hacking.\
             //This is only for testing purpose. Find something new to resolve this.
             var error = new ErrorViewModel
             {
