@@ -25,7 +25,19 @@ namespace SerilogImplementation.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            try
+            {
+                _logger.LogInformation("Throughing exception");
+                
+                var serilogTest = new SerilogTestModel();
+                serilogTest.ThroughException();
+                
+                return View();
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "Error", new { errorMessage = ex.Message });
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
