@@ -1,10 +1,10 @@
 # SerilogLogging
 
-------------
+-------------
 
-### Package:
+### Packages:
  
-------------
+-------------
 
 #### Serilog.AspNetCore 3.4.0
 #### Serilog.Settings.Configuration 3.1.0
