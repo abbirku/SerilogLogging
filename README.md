@@ -6,19 +6,19 @@
 ## Serilog.Sinks.MSSqlServer 5.6.0
 ### Database Table Script:
 ```
-	CREATE TABLE [SerilogLoggingTable] (
-	   [Id] int IDENTITY(1,1) NOT NULL,
-	   [Message] nvarchar(max) NULL,
-	   [MessageTemplate] nvarchar(max) NULL,
-	   [Level] nvarchar(128) NULL,
-	   [TimeStamp] datetimeoffset(7) NOT NULL,
-	   [Exception] nvarchar(max) NULL,
-	   [Properties] xml NULL,
-	   [LogEvent] nvarchar(max) NULL
+CREATE TABLE [SerilogLoggingTable] (
+   [Id] int IDENTITY(1,1) NOT NULL,
+   [Message] nvarchar(max) NULL,
+   [MessageTemplate] nvarchar(max) NULL,
+   [Level] nvarchar(128) NULL,
+   [TimeStamp] datetimeoffset(7) NOT NULL,
+   [Exception] nvarchar(max) NULL,
+   [Properties] xml NULL,
+   [LogEvent] nvarchar(max) NULL
 
-	   CONSTRAINT [PK_Log]
-		 PRIMARY KEY CLUSTERED ([Id] ASC)
-	)
+   CONSTRAINT [PK_Log]
+	 PRIMARY KEY CLUSTERED ([Id] ASC)
+)
 ```
 ### Notes:
 1. While using Serilog use appsetting.json for logging configuration.
