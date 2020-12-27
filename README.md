@@ -5,7 +5,7 @@
 ## Serilog.Settings.Configuration 3.1.0
 ## Serilog.Sinks.MSSqlServer 5.6.0
 ### Database Table Script:
-``
+```
 	CREATE TABLE [SerilogLoggingTable] (
 	   [Id] int IDENTITY(1,1) NOT NULL,
 	   [Message] nvarchar(max) NULL,
@@ -19,7 +19,7 @@
 	   CONSTRAINT [PK_Log]
 		 PRIMARY KEY CLUSTERED ([Id] ASC)
 	)
-``
+```
 ### Notes:
 1. While using Serilog use appsetting.json for logging configuration.
 2. It's a good practice to use logging in a single controller. 
