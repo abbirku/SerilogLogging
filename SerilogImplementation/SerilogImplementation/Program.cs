@@ -32,7 +32,7 @@ namespace SerilogImplementation
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
-                //.WriteTo.File(Path.Combine("Logs" , "library-log-.log"), rollingInterval: RollingInterval.Day)
+                //.WriteTo.File(Path.Combine("Logs" , "library-log-.log"), rollingInterval: RollingInterval.Day) //You can use this instead of appsetting.json but not recomended.
                 .ReadFrom.Configuration(configBuilder)
                 .CreateLogger();
 
