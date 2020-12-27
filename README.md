@@ -42,3 +42,12 @@ CREATE TABLE [SerilogLoggingTable] (
 2. It's a good practice to use logging in a single controller. 
 3. Don't show error messages or exception to user. Log it down to Serilog file.
 4. Don't make file extension as .txt, instead use a different custom extension.
+
+----------
+
+Links:
+
+----------
+
+<https://www.carlrippon.com/asp-net-core-logging-with-serilog-and-sql-server>
+
