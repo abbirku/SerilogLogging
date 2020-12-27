@@ -1,5 +1,7 @@
 # SerilogLogging
 
+------------
+
 ### Package:
  
 ------------
@@ -7,6 +9,9 @@
 #### Serilog.AspNetCore 3.4.0
 #### Serilog.Settings.Configuration 3.1.0
 #### Serilog.Sinks.MSSqlServer 5.6.0
+
+--------------------------
+
 ### Database Table Script:
 
 --------------------------
@@ -26,6 +31,9 @@ CREATE TABLE [SerilogLoggingTable] (
 	 PRIMARY KEY CLUSTERED ([Id] ASC)
 )
 ```
+
+----------
+
 ### Notes:
 
 ----------
