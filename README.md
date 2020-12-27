@@ -1,10 +1,16 @@
 # SerilogLogging
 
-### Package: 
+### Package:
+ 
+------------
+
 #### Serilog.AspNetCore 3.4.0
 #### Serilog.Settings.Configuration 3.1.0
 #### Serilog.Sinks.MSSqlServer 5.6.0
 ### Database Table Script:
+
+--------------------------
+
 ```
 CREATE TABLE [SerilogLoggingTable] (
    [Id] int IDENTITY(1,1) NOT NULL,
@@ -19,8 +25,11 @@ CREATE TABLE [SerilogLoggingTable] (
    CONSTRAINT [PK_Log]
 	 PRIMARY KEY CLUSTERED ([Id] ASC)
 )
-```sql
+```
 ### Notes:
+
+----------
+
 1. While using Serilog use appsetting.json for logging configuration.
 2. It's a good practice to use logging in a single controller. 
 3. Don't show error messages or exception to user. Log it down to Serilog file.
