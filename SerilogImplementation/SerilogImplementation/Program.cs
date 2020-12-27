@@ -1,11 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
 
@@ -32,7 +28,7 @@ namespace SerilogImplementation
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
-                //.WriteTo.File(Path.Combine("Logs" , "library-log-.log"), rollingInterval: RollingInterval.Day)
+                //.WriteTo.File(Path.Combine("Logs" , "library-log-.log"), rollingInterval: RollingInterval.Day) //You can use this instead of appsetting.json but not recomended.
                 .ReadFrom.Configuration(configBuilder)
                 .CreateLogger();
 
