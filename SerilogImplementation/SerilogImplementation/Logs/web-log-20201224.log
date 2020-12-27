@@ -1,0 +1,3 @@
+2020-12-24 00:46:37.579 +06:00 [INF] Application Starting up
+2020-12-24 00:47:19.815 +06:00 [INF] Throughing exception
+2020-12-24 00:47:35.049 +06:00 [ERR] Error occurred from SerilogTestModel->ThroughException
